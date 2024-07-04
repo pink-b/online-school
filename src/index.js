@@ -13,11 +13,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 root.render(
-  <Context value={{
-    user: new UserStore()
-  }}>
-    <App />
-    </Context>
+  <>
+  <Context.Provider value={{user: new UserStore()}}>
+      <App />
+  </Context.Provider>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

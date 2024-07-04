@@ -3,7 +3,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import { authRoutes, publicRoutes } from '../routes';
 import Auth from '../page/Auth';
 import { NOT_FOUND,  MAIN_PAGE } from '../utils/consts';
-import { Context } from '..';
+import { Context } from '../index';
 
 const AppRouter = () => {
     const {user} = useContext(Context)
