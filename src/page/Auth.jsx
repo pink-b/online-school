@@ -1,10 +1,12 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 const Auth = () => {
     return (
-        <div>
+        <Container
+        className='d-flex justify-content-center align-items-center'>
             Auth
-        </div>
+        </Container>
     );
 };
 
